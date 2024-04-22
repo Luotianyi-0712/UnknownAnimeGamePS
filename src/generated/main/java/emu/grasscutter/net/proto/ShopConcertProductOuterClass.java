@@ -73,10 +73,6 @@ public final class ShopConcertProductOuterClass {
     int getBuyTimes();
   }
   /**
-   * <pre>
-   * Obf: CKIBKCAKBNI
-   * </pre>
-   *
    * Protobuf type {@code ShopConcertProduct}
    */
   public static final class ShopConcertProduct extends
@@ -543,10 +539,6 @@ public final class ShopConcertProductOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: CKIBKCAKBNI
-     * </pre>
-     *
      * Protobuf type {@code ShopConcertProduct}
      */
     public static final class Builder extends

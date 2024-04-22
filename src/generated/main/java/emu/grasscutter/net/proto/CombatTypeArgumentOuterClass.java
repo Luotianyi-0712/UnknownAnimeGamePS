@@ -15,10 +15,6 @@ public final class CombatTypeArgumentOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: CBOEAHNFCIJ
-   * </pre>
-   *
    * Protobuf enum {@code CombatTypeArgument}
    */
   public enum CombatTypeArgument
@@ -99,6 +95,22 @@ public final class CombatTypeArgumentOuterClass {
      * <code>COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE = 18;</code>
      */
     COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE(18),
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_SPECIAL_MOTION_INFO = 19;</code>
+     */
+    COMBAT_TYPE_ARGUMENT_SPECIAL_MOTION_INFO(19),
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_MOVE = 20;</code>
+     */
+    COMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_MOVE(20),
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_NULTI_OVERRIDE_ANIM = 21;</code>
+     */
+    COMBAT_TYPE_ARGUMENT_NULTI_OVERRIDE_ANIM(21),
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_DEBUG_SYNC_MOTION = 22;</code>
+     */
+    COMBAT_TYPE_ARGUMENT_DEBUG_SYNC_MOTION(22),
     UNRECOGNIZED(-1),
     ;
 
@@ -178,6 +190,22 @@ public final class CombatTypeArgumentOuterClass {
      * <code>COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE = 18;</code>
      */
     public static final int COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE_VALUE = 18;
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_SPECIAL_MOTION_INFO = 19;</code>
+     */
+    public static final int COMBAT_TYPE_ARGUMENT_SPECIAL_MOTION_INFO_VALUE = 19;
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_MOVE = 20;</code>
+     */
+    public static final int COMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_MOVE_VALUE = 20;
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_NULTI_OVERRIDE_ANIM = 21;</code>
+     */
+    public static final int COMBAT_TYPE_ARGUMENT_NULTI_OVERRIDE_ANIM_VALUE = 21;
+    /**
+     * <code>COMBAT_TYPE_ARGUMENT_DEBUG_SYNC_MOTION = 22;</code>
+     */
+    public static final int COMBAT_TYPE_ARGUMENT_DEBUG_SYNC_MOTION_VALUE = 22;
 
 
     public final int getNumber() {
@@ -223,6 +251,10 @@ public final class CombatTypeArgumentOuterClass {
         case 16: return COMBAT_TYPE_ARGUMENT_BEING_HEALED_NTF;
         case 17: return COMBAT_TYPE_ARGUMENT_SKILL_ANCHOR_POSITION_NTF;
         case 18: return COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE;
+        case 19: return COMBAT_TYPE_ARGUMENT_SPECIAL_MOTION_INFO;
+        case 20: return COMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_MOVE;
+        case 21: return COMBAT_TYPE_ARGUMENT_NULTI_OVERRIDE_ANIM;
+        case 22: return COMBAT_TYPE_ARGUMENT_DEBUG_SYNC_MOTION;
         default: return null;
       }
     }
@@ -288,7 +320,7 @@ public final class CombatTypeArgumentOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030CombatTypeArgument.proto*\310\006\n\022CombatTyp" +
+      "\n\030CombatTypeArgument.proto*\202\010\n\022CombatTyp" +
       "eArgument\022\035\n\031COMBAT_TYPE_ARGUMENT_NONE\020\000" +
       "\022&\n\"COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT\020\001" +
       "\022/\n+COMBAT_TYPE_ARGUMENT_ANIMATOR_STATE_" +
@@ -309,8 +341,13 @@ public final class CombatTypeArgumentOuterClass {
       "E_MOVE\020\017\022)\n%COMBAT_TYPE_ARGUMENT_BEING_H" +
       "EALED_NTF\020\020\0222\n.COMBAT_TYPE_ARGUMENT_SKIL" +
       "L_ANCHOR_POSITION_NTF\020\021\022,\n(COMBAT_TYPE_A" +
-      "RGUMENT_GRAPPLING_HOOK_MOVE\020\022B\033\n\031emu.gra" +
-      "sscutter.net.protob\006proto3"
+      "RGUMENT_GRAPPLING_HOOK_MOVE\020\022\022,\n(COMBAT_" +
+      "TYPE_ARGUMENT_SPECIAL_MOTION_INFO\020\023\0220\n,C" +
+      "OMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_M" +
+      "OVE\020\024\022,\n(COMBAT_TYPE_ARGUMENT_NULTI_OVER" +
+      "RIDE_ANIM\020\025\022*\n&COMBAT_TYPE_ARGUMENT_DEBU" +
+      "G_SYNC_MOTION\020\026B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

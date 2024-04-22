@@ -19,29 +19,24 @@ public final class PlayerGameTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 game_time = 6;</code>
+     * <code>uint32 game_time = 13;</code>
      * @return The gameTime.
      */
     int getGameTime();
 
     /**
-     * <code>uint32 uid = 3;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>bool is_home = 7;</code>
+     * <code>bool is_home = 14;</code>
      * @return The isHome.
      */
     boolean getIsHome();
   }
   /**
-   * <pre>
-   * CmdId: 184
-   * Obf: LHPHBCOAAJI
-   * </pre>
-   *
    * Protobuf type {@code PlayerGameTimeNotify}
    */
   public static final class PlayerGameTimeNotify extends
@@ -86,17 +81,17 @@ public final class PlayerGameTimeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 88: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 104: {
 
               gameTime_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 112: {
 
               isHome_ = input.readBool();
               break;
@@ -133,10 +128,10 @@ public final class PlayerGameTimeNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerGameTimeNotifyOuterClass.PlayerGameTimeNotify.class, emu.grasscutter.net.proto.PlayerGameTimeNotifyOuterClass.PlayerGameTimeNotify.Builder.class);
     }
 
-    public static final int GAME_TIME_FIELD_NUMBER = 6;
+    public static final int GAME_TIME_FIELD_NUMBER = 13;
     private int gameTime_;
     /**
-     * <code>uint32 game_time = 6;</code>
+     * <code>uint32 game_time = 13;</code>
      * @return The gameTime.
      */
     @java.lang.Override
@@ -144,10 +139,10 @@ public final class PlayerGameTimeNotifyOuterClass {
       return gameTime_;
     }
 
-    public static final int UID_FIELD_NUMBER = 3;
+    public static final int UID_FIELD_NUMBER = 11;
     private int uid_;
     /**
-     * <code>uint32 uid = 3;</code>
+     * <code>uint32 uid = 11;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -155,10 +150,10 @@ public final class PlayerGameTimeNotifyOuterClass {
       return uid_;
     }
 
-    public static final int IS_HOME_FIELD_NUMBER = 7;
+    public static final int IS_HOME_FIELD_NUMBER = 14;
     private boolean isHome_;
     /**
-     * <code>bool is_home = 7;</code>
+     * <code>bool is_home = 14;</code>
      * @return The isHome.
      */
     @java.lang.Override
@@ -181,13 +176,13 @@ public final class PlayerGameTimeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (uid_ != 0) {
-        output.writeUInt32(3, uid_);
+        output.writeUInt32(11, uid_);
       }
       if (gameTime_ != 0) {
-        output.writeUInt32(6, gameTime_);
+        output.writeUInt32(13, gameTime_);
       }
       if (isHome_ != false) {
-        output.writeBool(7, isHome_);
+        output.writeBool(14, isHome_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +195,15 @@ public final class PlayerGameTimeNotifyOuterClass {
       size = 0;
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, uid_);
+          .computeUInt32Size(11, uid_);
       }
       if (gameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, gameTime_);
+          .computeUInt32Size(13, gameTime_);
       }
       if (isHome_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isHome_);
+          .computeBoolSize(14, isHome_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,11 +340,6 @@ public final class PlayerGameTimeNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 184
-     * Obf: LHPHBCOAAJI
-     * </pre>
-     *
      * Protobuf type {@code PlayerGameTimeNotify}
      */
     public static final class Builder extends
@@ -510,7 +500,7 @@ public final class PlayerGameTimeNotifyOuterClass {
 
       private int gameTime_ ;
       /**
-       * <code>uint32 game_time = 6;</code>
+       * <code>uint32 game_time = 13;</code>
        * @return The gameTime.
        */
       @java.lang.Override
@@ -518,7 +508,7 @@ public final class PlayerGameTimeNotifyOuterClass {
         return gameTime_;
       }
       /**
-       * <code>uint32 game_time = 6;</code>
+       * <code>uint32 game_time = 13;</code>
        * @param value The gameTime to set.
        * @return This builder for chaining.
        */
@@ -529,7 +519,7 @@ public final class PlayerGameTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 game_time = 6;</code>
+       * <code>uint32 game_time = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGameTime() {
@@ -541,7 +531,7 @@ public final class PlayerGameTimeNotifyOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 3;</code>
+       * <code>uint32 uid = 11;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -549,7 +539,7 @@ public final class PlayerGameTimeNotifyOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 3;</code>
+       * <code>uint32 uid = 11;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -560,7 +550,7 @@ public final class PlayerGameTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 3;</code>
+       * <code>uint32 uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -572,7 +562,7 @@ public final class PlayerGameTimeNotifyOuterClass {
 
       private boolean isHome_ ;
       /**
-       * <code>bool is_home = 7;</code>
+       * <code>bool is_home = 14;</code>
        * @return The isHome.
        */
       @java.lang.Override
@@ -580,7 +570,7 @@ public final class PlayerGameTimeNotifyOuterClass {
         return isHome_;
       }
       /**
-       * <code>bool is_home = 7;</code>
+       * <code>bool is_home = 14;</code>
        * @param value The isHome to set.
        * @return This builder for chaining.
        */
@@ -591,7 +581,7 @@ public final class PlayerGameTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_home = 7;</code>
+       * <code>bool is_home = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHome() {
@@ -668,8 +658,8 @@ public final class PlayerGameTimeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PlayerGameTimeNotify.proto\"G\n\024PlayerGa" +
-      "meTimeNotify\022\021\n\tgame_time\030\006 \001(\r\022\013\n\003uid\030\003" +
-      " \001(\r\022\017\n\007is_home\030\007 \001(\010B\033\n\031emu.grasscutter" +
+      "meTimeNotify\022\021\n\tgame_time\030\r \001(\r\022\013\n\003uid\030\013" +
+      " \001(\r\022\017\n\007is_home\030\016 \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

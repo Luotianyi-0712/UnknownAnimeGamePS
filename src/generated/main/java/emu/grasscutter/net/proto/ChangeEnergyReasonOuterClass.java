@@ -15,10 +15,6 @@ public final class ChangeEnergyReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: GEHMDJHCOIE
-   * </pre>
-   *
    * Protobuf enum {@code ChangeEnergyReason}
    */
   public enum ChangeEnergyReason

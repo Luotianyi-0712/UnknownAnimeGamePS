@@ -19,29 +19,24 @@ public final class TakePlayerLevelRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 7;</code>
+     * <code>uint32 level = 5;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 reward_id = 10;</code>
+     * <code>uint32 reward_id = 2;</code>
      * @return The rewardId.
      */
     int getRewardId();
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 192
-   * Obf: OEKGAKDIMMK
-   * </pre>
-   *
    * Protobuf type {@code TakePlayerLevelRewardRsp}
    */
   public static final class TakePlayerLevelRewardRsp extends
@@ -86,19 +81,19 @@ public final class TakePlayerLevelRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              rewardId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 56: {
+            case 40: {
 
               level_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
-              rewardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +128,10 @@ public final class TakePlayerLevelRewardRspOuterClass {
               emu.grasscutter.net.proto.TakePlayerLevelRewardRspOuterClass.TakePlayerLevelRewardRsp.class, emu.grasscutter.net.proto.TakePlayerLevelRewardRspOuterClass.TakePlayerLevelRewardRsp.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 7;
+    public static final int LEVEL_FIELD_NUMBER = 5;
     private int level_;
     /**
-     * <code>uint32 level = 7;</code>
+     * <code>uint32 level = 5;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -144,10 +139,10 @@ public final class TakePlayerLevelRewardRspOuterClass {
       return level_;
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 10;
+    public static final int REWARD_ID_FIELD_NUMBER = 2;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 10;</code>
+     * <code>uint32 reward_id = 2;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -155,10 +150,10 @@ public final class TakePlayerLevelRewardRspOuterClass {
       return rewardId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -180,14 +175,14 @@ public final class TakePlayerLevelRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (rewardId_ != 0) {
+        output.writeUInt32(2, rewardId_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(3, retcode_);
       }
       if (level_ != 0) {
-        output.writeUInt32(7, level_);
-      }
-      if (rewardId_ != 0) {
-        output.writeUInt32(10, rewardId_);
+        output.writeUInt32(5, level_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +193,17 @@ public final class TakePlayerLevelRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (rewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, rewardId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(3, retcode_);
       }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, level_);
-      }
-      if (rewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, rewardId_);
+          .computeUInt32Size(5, level_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,11 +339,6 @@ public final class TakePlayerLevelRewardRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 192
-     * Obf: OEKGAKDIMMK
-     * </pre>
-     *
      * Protobuf type {@code TakePlayerLevelRewardRsp}
      */
     public static final class Builder extends
@@ -509,7 +499,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 7;</code>
+       * <code>uint32 level = 5;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -517,7 +507,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 7;</code>
+       * <code>uint32 level = 5;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -528,7 +518,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 7;</code>
+       * <code>uint32 level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -540,7 +530,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
 
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 10;</code>
+       * <code>uint32 reward_id = 2;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -548,7 +538,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 10;</code>
+       * <code>uint32 reward_id = 2;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +549,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 10;</code>
+       * <code>uint32 reward_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -571,7 +561,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -579,7 +569,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -590,7 +580,7 @@ public final class TakePlayerLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -667,8 +657,8 @@ public final class TakePlayerLevelRewardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036TakePlayerLevelRewardRsp.proto\"M\n\030Take" +
-      "PlayerLevelRewardRsp\022\r\n\005level\030\007 \001(\r\022\021\n\tr" +
-      "eward_id\030\n \001(\r\022\017\n\007retcode\030\001 \001(\005B\033\n\031emu.g" +
+      "PlayerLevelRewardRsp\022\r\n\005level\030\005 \001(\r\022\021\n\tr" +
+      "eward_id\030\002 \001(\r\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

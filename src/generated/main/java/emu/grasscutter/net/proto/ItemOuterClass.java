@@ -78,10 +78,6 @@ public final class ItemOuterClass {
     public emu.grasscutter.net.proto.ItemOuterClass.Item.DetailCase getDetailCase();
   }
   /**
-   * <pre>
-   * Obf: EBCKEILKJOG
-   * </pre>
-   *
    * Protobuf type {@code Item}
    */
   public static final class Item extends
@@ -590,10 +586,6 @@ public final class ItemOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EBCKEILKJOG
-     * </pre>
-     *
      * Protobuf type {@code Item}
      */
     public static final class Builder extends
