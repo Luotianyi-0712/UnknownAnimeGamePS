@@ -22,6 +22,11 @@ public class PacketOpenStateUpdateNotify extends BasePacket {
         OpenStateUpdateNotify.Builder proto = OpenStateUpdateNotify.newBuilder();
 
         GameData.getOpenStateList().stream().map(OpenStateData::getId).forEach(id -> {
+            proto.putOpenStateMap(id, 1);
+            if (id == 48) {
+                proto.putOpenStateMap(48, 0);   // 把地图边界状态改为0
+                return;
+            }
             if ((id == 45) && !GAME_OPTIONS.resinOptions.resinUsage) {
                 proto.putOpenStateMap(45, 0);  // Remove resin from map
                 return;

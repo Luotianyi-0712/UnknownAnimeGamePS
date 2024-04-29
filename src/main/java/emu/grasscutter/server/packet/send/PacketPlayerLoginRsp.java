@@ -11,13 +11,9 @@ import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.http.dispatch.RegionHandler;
 import emu.grasscutter.utils.Crypto;
-import emu.grasscutter.utils.FileUtils;
-
-import static emu.grasscutter.config.Configuration.*;
-
-import java.io.File;
-import java.util.Base64;
 import java.util.Objects;
+import static emu.grasscutter.config.Configuration.*;
+import emu.grasscutter.net.proto.ResVersionConfigOuterClass;
 
 public class PacketPlayerLoginRsp extends BasePacket {
 
@@ -62,9 +58,9 @@ public class PacketPlayerLoginRsp extends BasePacket {
                 .setResVersionConfig(info.getResVersionConfig())
                 .setClientVersionSuffix(info.getClientVersionSuffix())
                 .setClientSilenceVersionSuffix(info.getClientSilenceVersionSuffix())
-                .setIsScOpen(false)
+                //.setIsScOpen(false)
                 //.setScInfo(ByteString.copyFrom(new byte[] {}))
-                .setRegisterCps("mihoyo")
+                //.setRegisterCps("mihoyo")
                 .setCountryCode("US")
                 .build();
 
